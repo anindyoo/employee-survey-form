@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Survey Form</title>
+</head>
+<body>
+  <header>
+    <h1>Employee Survey Form</h1>
+		<p>Survey ini diberikan kepada para pegawai perusahaan setiap akhir bulan guna memperbaiki kinerja dari lingkungan kerja di perusahaan ke depannya. 
+			Oleh karena itu, para pegawai wajib mengisi survey berikut sejujurnya demi kelangsungan kerja yang lebih baik. Terima kasih.</p>
+		<p><i><b>Catatan: </b> Survey ini wajib diisi sebelum tanggal <time datetime="2022-03-31 23:59">31 Maret 2022, pukul 23:59 WIB</time>.</i></p>
+		<hr>		
+  </header>
+
+  <main>
+		<form action="#">
+			<section id="biodata">
+				<h2>Biodata & Data Kerja Pegawai</h2>
+				<table>
+					<tr>
+						<td>
+							Nama Pegawai			
+						</td>
+						<td>
+							<input type="text" name="nama" id="nama" size="45"> <br>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Nomor Induk Pegawai
+						</td>
+						<td>
+							<input type="text" name="nip" id="nip" size="45"> <br>
+						</td>
+					</tr>				
+					<tr>
+						<td>
+							Email Pegawai
+						</td>
+						<td>
+							<input type="text" name="email" id="email" size="45"> <br>
+						</td>
+					</tr>				
+					<tr>
+						<td>
+							Metode Kerja
+						</td>
+						<td>
+							<input type="radio" name="metode" id="m1" value="m1">
+							<label for="m1">WFO</label>
+							<input type="radio" name="metode" id="m2" value="m2">
+							<label for="m2">WFH</label>
+						</td>
+					</tr>				
+					<tr>
+						<td>
+							 Cabang Kantor
+						</td>
+						<td>
+							<select name="cabang" id="cabang">
+								<option value="" disabled selected hidden>Pilih cabang...</option>
+								<option value="Jakarta Barat">Jakarta Barat</option>							
+								<option value="Jakarta Pusat">Jakarta Pusat</option>							
+								<option value="Jakarta Selatan">Jakarta Selatan</option>							
+								<option value="Jakarta Timur">Jakarta Timur</option>							
+								<option value="Jakarta Utara">Jakarta Utara</option>							
+							</select>
+						</td>
+					</tr>				
+				</table>
+			</section>
+			<section id="survey">
+				<h2>Form Survey</h2>
+				<table border="1">
+					<thead>
+						<th>Pertanyaan</th>
+						<th>Sangat Tidak Setuju</th>
+						<th>Tidak Setuju</th>
+						<th>Netral</th>
+						<th>Setuju</th>
+						<th>Sangat Setuju</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Saya memahami visi& misi dari perusahaan</td>
+							<td align="center"><input type="radio" id="row1" name="row1" value="1"></td>
+							<td align="center"><input type="radio" id="row1" name="row1" value="2"></td>
+							<td align="center"><input type="radio" id="row1" name="row1" value="3"></td>
+							<td align="center"><input type="radio" id="row1" name="row1" value="4"></td>
+							<td align="center"><input type="radio" id="row1" name="row1" value="5"></td>
+						</tr>
+						<tr>
+							<td>Saya merasakan kesetaraan di antara rekan kerja</td>
+							<td align="center"><input type="radio" id="row2" name="row2" value="1"></td>
+							<td align="center"><input type="radio" id="row2" name="row2" value="2"></td>
+							<td align="center"><input type="radio" id="row2" name="row2" value="3"></td>
+							<td align="center"><input type="radio" id="row2" name="row2" value="4"></td>
+							<td align="center"><input type="radio" id="row2" name="row2" value="5"></td>
+						</tr>	
+						<tr>
+							<td>Saya merasa diperlakukan dengan baik dan adil oleh perusahaan</td>
+							<td align="center"><input type="radio" id="row3" name="row3" value="1"></td>
+							<td align="center"><input type="radio" id="row3" name="row3" value="2"></td>
+							<td align="center"><input type="radio" id="row3" name="row3" value="3"></td>
+							<td align="center"><input type="radio" id="row3" name="row3" value="4"></td>
+							<td align="center"><input type="radio" id="row3" name="row3" value="5"></td>
+						</tr>
+						<tr>
+							<td>Saya dapat bekerjasama dengan baik dengan sesama rekan kerja</td>
+							<td align="center"><input type="radio" id="row4" name="row4" value="1"></td>
+							<td align="center"><input type="radio" id="row4" name="row4" value="2"></td>
+							<td align="center"><input type="radio" id="row4" name="row4" value="3"></td>
+							<td align="center"><input type="radio" id="row4" name="row4" value="4"></td>
+							<td align="center"><input type="radio" id="row4" name="row4" value="5"></td>
+						</tr>
+						<tr>
+							<td>Perusahaan sudah memfasilitasi para pegawai dengan baik & lengkap</td>
+							<td align="center"><input type="radio" id="row5" name="row5" value="1"></td>
+							<td align="center"><input type="radio" id="row5" name="row5" value="2"></td>
+							<td align="center"><input type="radio" id="row5" name="row5" value="3"></td>
+							<td align="center"><input type="radio" id="row5" name="row5" value="4"></td>
+							<td align="center"><input type="radio" id="row5" name="row5" value="5"></td>
+						</tr>
+						<tr>
+							<td>Transparansi perusahaan dengan para pegawai sudah terlihat jelas</td>
+							<td align="center"><input type="radio" id="row6" name="row6"></td>
+							<td align="center"><input type="radio" id="row6" name="row6"></td>
+							<td align="center"><input type="radio" id="row6" name="row6"></td>
+							<td align="center"><input type="radio" id="row6" name="row6"></td>
+							<td align="center"><input type="radio" id="row6" name="row6"></td>
+						</tr>
+						<tr>
+							<td>Tunjangan-tunjangan yang diberikan perusahaan kepada pegawai sudah adil</td>
+							<td align="center"><input type="radio" id="row7" name="row7"></td>
+							<td align="center"><input type="radio" id="row7" name="row7"></td>
+							<td align="center"><input type="radio" id="row7" name="row7"></td>
+							<td align="center"><input type="radio" id="row7" name="row7"></td>
+							<td align="center"><input type="radio" id="row7" name="row7"></td>
+						</tr>
+						<tr>
+							<td>Saya akan tetap berkomitmen tinggi di perusahaan ini</td>
+							<td align="center"><input type="radio" id="row8" name="row8"></td>
+							<td align="center"><input type="radio" id="row8" name="row8"></td>
+							<td align="center"><input type="radio" id="row8" name="row8"></td>
+							<td align="center"><input type="radio" id="row8" name="row8"></td>
+							<td align="center"><input type="radio" id="row8" name="row8"></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>			 
+			<section id="saran">
+				<h2>Kritik & Saran</h2>
+				<textarea name="saran" id="saran" cols="100" rows="10" placeholder="Ketik kritik & saran Anda terhadap kinerja perusahaan..."></textarea> <br>
+				<input type="checkbox" id="send" name="send" value="send_true">
+  			<label for="send">Kirim salinan rekap survey ke email saya</label><br>
+			</section>
+			<br>
+			<input type="submit" value="Submit"> 
+		</form>
+  </main>
+
+	<footer>
+		<hr>
+		<p>Informasi lebih lanjut bisa menghubungi via:</p>
+		<p><b><a href="mailto:company@company.com">📧Email</a></b></p>
+		<p><b><a href="tel:+081212345432">📞Telepon</a></b></p>
+	</footer>
+</body>
+</html>
