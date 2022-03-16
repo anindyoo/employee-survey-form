@@ -8,12 +8,17 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <header>
-    <h1>Employee Survey Form</h1>
-		<p>Survey ini diberikan kepada para pegawai perusahaan setiap akhir bulan guna memperbaiki kinerja dari lingkungan kerja di perusahaan ke depannya. 
-			Oleh karena itu, para pegawai wajib mengisi survey berikut sejujurnya demi kelangsungan kerja yang lebih baik. Terima kasih.</p>
-		<p><i><b>Catatan: </b> Survey ini wajib diisi sebelum tanggal <time datetime="2022-03-31 23:59">31 Maret 2022, pukul 23:59 WIB</time>.</i></p>
-		<hr>		
+	<div class="whitespace"></div>
+  <header class="fix-pos">
+	  <section id="header-title">
+		  <h1>Employee Survey Form</h1>
+	  </section>
+	  <details id="header-desc">
+			<summary id="header-more">Detail Survey Lebih Lengkap...</summary>
+		  <p>Survey ini diberikan kepada para pegawai perusahaan setiap akhir bulan guna memperbaiki kinerja dari lingkungan kerja di perusahaan ke depannya. 
+			  Oleh karena itu, para pegawai wajib mengisi survey berikut sejujurnya demi kelangsungan kerja yang lebih baik. Terima kasih.</p>
+		  <p><i><b>Catatan: </b> Survey ini wajib diisi sebelum tanggal <time datetime="2022-03-31 23:59">31 Maret 2022, pukul 23:59 WIB</time>.</i></p>
+	  </details>
   </header>
 
   <main>
@@ -86,7 +91,7 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td>Saya memahami visi& misi dari perusahaan</td>
+							<td>Saya memahami visi & misi dari perusahaan</td>
 							<td align="center"><input type="radio" id="row1" name="row1" value="1"></td>
 							<td align="center"><input type="radio" id="row1" name="row1" value="2"></td>
 							<td align="center"><input type="radio" id="row1" name="row1" value="3"></td>
