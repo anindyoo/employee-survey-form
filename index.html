@@ -160,9 +160,13 @@
 
 			<section id="saran">
 				<h2>Kritik & Saran</h2>
-				<textarea name="saran" id="saran" cols="100" rows="10" placeholder="Ketik kritik & saran Anda terhadap kinerja perusahaan..."></textarea> <br>
-				<input type="checkbox" id="send" name="send" value="send_true">
-  			<label for="send">Kirim salinan rekap survey ke email saya</label><br>
+				<textarea class="form-control" name="saran" id="saran" rows="4" placeholder="Ketik kritik & saran Anda terhadap kinerja perusahaan..."></textarea>
+
+				<input class="form-check-input" type="checkbox" value="send_email" id="send">
+				<label class="form-check-label" for="send">
+					Kirim salinan rekap survey ke email saya
+				</label>
+				<label for="send"></label><br>
 			</section>
 			<input type="submit" value="Submit"> 
 		</form>
