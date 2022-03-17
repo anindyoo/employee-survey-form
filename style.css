@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Yeseva+One&display=swap');
 body, option {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif !important;
 }
 
 body {
@@ -8,7 +8,7 @@ body {
 }
 
 h1, h2 {
-    font-family: 'Yeseva One', cursive;
+    font-family: 'Yeseva One', cursive !important;
     margin: 0;
 }
 
@@ -50,11 +50,35 @@ select, input{
 } 
 
 main {
-    width: 80%;
+    width: 60%;
     padding: 25px;
     border: 1px solid #79797941;
     border-radius: 5px;
     margin: 50px auto;
+}
+
+#header-title h1 {
+    margin: 0;
+}
+
+@media screen and (max-width: 1023px) {
+    #header-title h1 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    #header-title {
+        padding: 0px 25px;
+        height: 55px;
+    }
+
+    .whitespace {
+        height: 70px;
+    }
+
+    main {
+        width: 90%;
+    }
 }
 
 main h2 {
@@ -70,37 +94,8 @@ main section {
     padding: 15px;
 }
 
-#biodata input[type="text"], 
-#biodata select, 
-#biodata option {
-    font-size: medium;
-    padding: 4px 10px 2px 10px;
-    height: 30px;
-    width: 100%;    
-}
-
 #biodata select {
     height: 40px;
-}
-
-#survey table {
-    border: 0;
-    border-collapse: collapse;
-    width: 100%;
-    display: block;
-    overflow-x: scroll;
-}
-
-#survey table th {
-    border: 1px solid #3d3d3d41;
-    background: #000000;
-    color: #ffffff;
-    padding: 10px;
-}
-
-#survey table td {
-    border: 1px solid #3d3d3d41;
-    padding: 10px;
 }
 
 #saran {
@@ -114,7 +109,14 @@ main section {
     margin-bottom: 5px;
 }
 
+@media screen and (max-width: 425px) {
+    #saran textarea {
+        font-size: 16px;
+    }
+}
+
 input[type="submit"] {
+    margin-top: 20px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: large;
     font-weight: bold;
@@ -143,13 +145,21 @@ input[type="submit"]:active {
 }
 
 footer {
-    padding: 20px 25px 12px 25px;
     color: white;
-    background: rgb(0, 0, 0);;
+    background: #1a1a1a;
+}
+
+#footer-info {
+    padding: 20px 25px 12px 25px;
+}
+
+#footer-cr {
+    background: #000;
+    text-align: center;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 footer a {
@@ -158,7 +168,7 @@ footer a {
 
 footer a:hover {
     color: #a9ffdb;
-    text-decoration: underline;
+    text-decoration: underline !important;
 }
 
 #footer-cr {
@@ -166,6 +176,7 @@ footer a:hover {
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding: 8px 25px;
 }
 
 #footer-cr p {
