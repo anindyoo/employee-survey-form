@@ -98,6 +98,7 @@ main section {
 }
 
 input[type="submit"] {
+    margin-top: 20px;
     font-family: 'Josefin Sans', sans-serif;
     font-size: large;
     font-weight: bold;
