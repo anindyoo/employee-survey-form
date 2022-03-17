@@ -57,7 +57,25 @@ main {
     margin: 50px auto;
 }
 
+#header-title h1 {
+    margin: 0;
+}
+
 @media screen and (max-width: 1023px) {
+    #header-title h1 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    #header-title {
+        padding: 0px 25px;
+        height: 55px;
+    }
+
+    .whitespace {
+        height: 70px;
+    }
+
     main {
         width: 90%;
     }
