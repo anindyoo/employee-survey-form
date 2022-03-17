@@ -57,7 +57,7 @@ main {
     margin: 50px auto;
 }
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1023px) {
     main {
         width: 90%;
     }
@@ -80,7 +80,7 @@ main section {
     height: 40px;
 }
 
-#survey table {
+/* #survey table {
     border: 0;
     border-collapse: collapse;
     width: 100%;
@@ -98,7 +98,7 @@ main section {
 #survey table td {
     border: 1px solid #3d3d3d41;
     padding: 10px;
-}
+} */
 
 #saran {
     margin-bottom: 20px;
@@ -109,6 +109,12 @@ main section {
     font-size: 20px;
     max-width: 100%;
     margin-bottom: 5px;
+}
+
+@media screen and (max-width: 425px) {
+    #saran textarea {
+        font-size: 16px;
+    }
 }
 
 input[type="submit"] {
