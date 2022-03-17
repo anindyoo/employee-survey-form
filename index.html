@@ -27,58 +27,51 @@
 		<form action="#">
 			<section id="biodata">
 				<h2>Biodata & Data Kerja Pegawai</h2>
-				<table>
-					<tr>
-						<td>
-							Nama Pegawai			
-						</td>
-						<td>
-							<input type="text" name="nama" id="nama" size="45"> <br>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							Nomor Induk Pegawai
-						</td>
-						<td>
-							<input type="text" name="nip" id="nip" size="45"> <br>
-						</td>
-					</tr>				
-					<tr>
-						<td>
-							Email Pegawai
-						</td>
-						<td>
-							<input type="text" name="email" id="email" size="45"> <br>
-						</td>
-					</tr>				
-					<tr>
-						<td>
-							Metode Kerja
-						</td>
-						<td>
-							<input type="radio" name="metode" id="m1" value="m1">
-							<label for="m1">WFO</label>
-							<input type="radio" name="metode" id="m2" value="m2">
-							<label for="m2">WFH</label>
-						</td>
-					</tr>				
-					<tr>
-						<td>
-							 Cabang Kantor
-						</td>
-						<td>
-							<select name="cabang" id="cabang">
-								<option value="" disabled selected hidden>Pilih cabang...</option>
-								<option value="Jakarta Barat">Jakarta Barat</option>							
-								<option value="Jakarta Pusat">Jakarta Pusat</option>							
-								<option value="Jakarta Selatan">Jakarta Selatan</option>							
-								<option value="Jakarta Timur">Jakarta Timur</option>							
-								<option value="Jakarta Utara">Jakarta Utara</option>							
-							</select>
-						</td>
-					</tr>				
-				</table>
+				<div class="mb-3 form-group row">
+					<label for="nama" class="col-sm-4 col-form-label">Nama Pegawai</label>
+					<div class="col-sm-8">					
+						<input type="text" name="nama" id="nama" class="form-control" placeholder="Nama lengkap">
+					</div>
+				</div>
+				<div class="mb-3 form-group row">
+					<label for="nip" class="col-sm-4 col-form-label">Nomor Induk Pegawai</label>
+					<div class="col-sm-8">					
+						<input type="text" name="nip" id="nip" class="form-control" placeholder="19931019xxxxxxxxxx">
+					</div>
+				</div>
+				<div class="mb-3 form-group row">
+					<label for="email" class="col-sm-4 col-form-label">Email Pegawai</label>
+					<div class="col-sm-8">					
+						<input type="email" name="email" id="email" class="form-control" placeholder="nama@email.com">
+					</div>
+				</div>
+				<div class="mb-3 form-group row">
+					<label for="metode" class="col-sm-4 col-form-label">Metode Kerja</label>
+					<div class="col-sm-8">
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="metode" id="metode1" value="metode1">
+							<label class="form-check-label" for="metode1">WFO</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="metode" id="metode2" value="metode2">
+							<label class="form-check-label" for="metode2">WFH</label>
+						</div>
+					</div>
+				</div>
+				<div class="mb-3 form-group row">
+					<label for="metode" class="col-sm-4 col-form-label">Metode Kerja</label>
+					<div class="col-sm-8">
+						<select class="form-select form-select-sm" aria-label=".form-select-sm example">
+							<option value="" disabled selected hidden>Pilih cabang...</option>
+							<option value="Jakarta Barat">Jakarta Barat</option>							
+							<option value="Jakarta Pusat">Jakarta Pusat</option>							
+							<option value="Jakarta Selatan">Jakarta Selatan</option>							
+							<option value="Jakarta Timur">Jakarta Timur</option>							
+							<option value="Jakarta Utara">Jakarta Utara</option>
+						</select>
+					</div>
+				</div>
+
 			</section>
 			<section id="survey">
 				<h2>Form Survey</h2>
